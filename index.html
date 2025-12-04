@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Николай Чибисов - фронтенд-разработчик и любитель кошек</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>  
+      <nav>
+        <div class="logo">FloppaDev</div>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#portfolio">Портфолио</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <button class="mode-switch" onclick="toggleMode()">FLOPPA MODE</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img src="nikolai.png" alt="nikolai chibisov" id="hero-img">
+        <h1>Николай Чибисов</h1>
+        <p>15 лет · фронтенд-разработчик · любитель кошек · про-геймер · <span class="minecraft-accent">STALCRAFT X</span> · пьёт зелёный чай</p>
+        <button class="btn" onclick="document.querySelector('#about').scrollIntoView({behavior:'smooth' })">Узнать больше </button>
+      </section>
+    
+      <section id="about">
+        <h2>Обо мне</h2>
+        <div class="about-card">
+          <img src="/floppa.png" alt="floppa" id="about-img">
+          <div class="about-text">
+            <p>Привет! Меня зовут Николай😺 </p>
+            <p>Я обожаю смотреть ютуб, играть в видеоигры и мне 15 лет.</p>
+            <p>Любимые игры : <strong>BattleBit Remastered</strong>, <strong>STALCRAFT: X</strong>, <strong>Deep Rock Galactic</strong>, <strong>DBD</strong>.</div></p>
+            <p>Пью только зелёный чай и ем только твёрдые сладкие яблоки (никаких мягких!).</p>
+            <p>Увлекаюсь фронтенд-разработкой - это мой сайт обо мне и моих проектах.</p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© 2025 Николай Чибисов. Все котики под охраной BIG FLOPPA.</p>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>
