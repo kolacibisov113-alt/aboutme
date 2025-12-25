@@ -1,0 +1,232 @@
+
+:root {
+    --bg: #1a001a;
+    --accent: #9d4edd;
+    --accent-light: #c77dff;
+    --text: #e0aaff;
+    --card: rgba(157, 78, 221, 0.15);
+    --border: #5a189a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    min-height: 100wh;
+    overflow-x:hidden ;
+}
+
+header{
+    position: fixed;
+    top:0; 
+    padding: 1.5rem 5%;
+    background: rgba(26, 0, 26, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+    width: 100%;
+}
+
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family:'Press Start 2P', cursive ;
+    font-size: 1.4rem;
+    color: var(--accent-light);
+    text-shadow: 0 0 10px #c77dff;
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav a{
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover{
+    color: var(--accent-light);
+}
+
+.mode-switch{
+    background: none;
+    border: 2px solid var(--accent);
+    color: var(--accent-light);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family:'Press Start 2P';
+    font-size: 0.8rem;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.hero img{
+    width: 280px;
+    height: 280px;
+    object-fit:cover ;
+    border-radius: 30% 70% 70% 30% /30% 30% 70% 70%;
+    border: 6px solid var(--accent);
+    box-shadow: 0 0 40px rgba(157, 78, 221, 0.6);
+    margin-bottom: 2rem;
+    transition: all 0.6s;
+}
+
+.hero img.floppa-mode{
+    border-radius: 20px ;
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.hero h1{
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg,#9d4edd,#e0aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.btn{
+    background-color: var(--accent);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(157, 78 , 221, 0.4);
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(157, 78, 221, 0.6);
+}
+
+section{
+    padding: 100px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+    margin: 4rem;
+    background: linear-gradient(90deg,#c77dff,#9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent ;
+}
+
+.about-card{
+    background: var(--card);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-card img{
+    width: 300px;
+    border-radius:20px ;
+    box-shadow: 0 0 30px rgba(157, 78, 221, 0.5);
+}
+
+.about-text{
+    max-width: 600px;
+}
+
+.about-text p{
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem;
+    border-top: 1px solid var(--border);
+    margin-top: 100px;
+}
+
+.minecraft-accent{
+    font-family: 'Press Start 2P',cursive;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000;
+}
+
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 4rem inset #00000050;
+  }
+  
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    animation: fall linear infinite;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  }
+  
+@keyframes fall {
+    0% {
+      transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(50vh) translateX(15px) rotate(180deg);
+    }
+    100% {
+      transform: translateY(100vh) translateX(30px) rotate(360deg);
+    }
+  }
+  
