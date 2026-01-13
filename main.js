@@ -55,3 +55,6 @@ document.addEventListener('mousemove', function(e) {
     let angleY = 35 * dy / window.innerHeight / 2
     block.style.transform = `rotateX(${-angleY}deg) rotateY(${angleX}deg)`
 })
+    let angleY = 35 * dy / window.innerHeight / 2
+    block.style.transform = `rotateX(${-angleY}deg) rotateY(${angleX}deg)`
+})
