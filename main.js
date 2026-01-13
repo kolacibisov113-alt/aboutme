@@ -2,8 +2,8 @@ let heroImg = document.querySelector('#hero-img')
 let aboutImg = document.querySelector('#about-img')
 let switchBtn = document.querySelector('.mode-switch')
 
-let humanPhoto = '/nikolai.png'
-let floppaPhoto = '/floppa.png'
+let humanPhoto = './nikolai.png'
+let floppaPhoto = './floppa.png'
 let humanAbout = 'https://i.ibb.co/XkrMvFnF/cat3.png'
 let floppaAbout = 'https://i.ibb.co/zWr4872R/cat1.png'
 
